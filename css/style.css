@@ -113,6 +113,11 @@ footer {
   background-color: #343a40;
   border-color: #343a40;
 }
+.footer-btn-a:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
 .footer-links {
   position: relative;
   width: 100%;
