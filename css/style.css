@@ -7,6 +7,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
+/* Navigation */
 .navbar {
   padding: 1rem 12px;
   background-color: #212529;
@@ -17,7 +18,7 @@ body {
   z-index: 1050;
 }
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .main-nav {
@@ -41,25 +42,13 @@ body {
   margin-left: 15px;
 }
 .menu a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .menu a:hover {
   color: #fed136;
 }
 
-@media screen and (min-width: 992px) {
-  .logo {
-    font-size: 1.5em;
-  }
-  .navbar {
-    background-color: transparent;
-  }
-  .menu {
-    display: flex;
-    margin-left: auto;
-  }
-}
 /*footer style */
 footer {
   text-align: center;
@@ -68,18 +57,12 @@ footer {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-  padding: 1.5rem 0;
-}
-.footer-container {
-  width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 1.5rem 12px;
 }
 .footer-box {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin-right: -0.75rem;
@@ -87,15 +70,11 @@ footer {
   min-width: 265px;
 }
 .footer-text {
-  position: relative;
-  width: 100%;
   padding: 0 0.75rem;
   line-height: 1.5;
 }
 .footer-btn {
   margin: 1rem 0;
-  position: relative;
-  width: 100%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -119,8 +98,6 @@ footer {
   border-color: #1d2124;
 }
 .footer-links {
-  position: relative;
-  width: 100%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -137,8 +114,13 @@ footer {
   text-decoration: underline;
 }
 
-/*Footer, media queries */
+
+/* CSS MIN 576px*/
 @media (min-width: 576px) {
+  .container{
+    max-width: 540px;
+  }
+  /* footer css */
   footer {
     font-size: 0.9rem;
     text-align: center;
@@ -147,9 +129,16 @@ footer {
     width: 100%;
     max-width: 540px;
   }
+
 }
 
+
+/* CSS MIN 762px*/
 @media (min-width: 762px) {
+  .container{
+    max-width: 720px;
+  }
+  /* footer */
   footer {
     font-size: 0.9rem;
     text-align: center;
@@ -160,7 +149,24 @@ footer {
   }
 }
 
-@media (min-width: 992px) {
+
+/* CSS MIN 992px*/
+@media screen and (min-width: 992px) {
+  .container{
+    max-width: 960px;
+  }
+  /* navbar */
+  .logo {
+    font-size: 1.5em;
+  }
+  .navbar {
+    background-color: transparent;
+  }
+  .menu {
+    display: flex;
+    margin-left: auto;
+  }
+  /* footer*/
   footer {
     font-size: 0.9rem;
     text-align: center;
@@ -174,3 +180,11 @@ footer {
     flex-wrap: nowrap;
   }
 }
+
+/* CSS MIN 1200px*/
+@media (min-width: 1200px){
+  .container {
+    max-width: 1140px;
+  }
+}
+
