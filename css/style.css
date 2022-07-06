@@ -42,11 +42,47 @@ body {
   margin-left: 15px;
 }
 .menu a {
-  color: black;
+  color:white;
   text-decoration: none;
 }
 .menu a:hover {
   color: #fed136;
+}
+header{
+  background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+  color:white;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+}
+.header-inner{
+  margin: auto;
+}
+.header-inner h2{
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.header-inner h1{
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration:none;
+  margin-top: 15px;
+  display: inline-block;
+  background-color:#fed136;
+  border-radius: 3px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 /*footer style */
@@ -120,6 +156,12 @@ footer {
   .container{
     max-width: 540px;
   }
+  .header-inner h2{
+    font-size: 24px;
+  }
+  .header-inner h1{
+    font-size: 38px;
+  }
   /* footer css */
   footer {
     font-size: 0.9rem;
@@ -138,6 +180,16 @@ footer {
   .container{
     max-width: 720px;
   }
+  .header-inner h2{
+    font-size: 30px;
+  }
+  .header-inner h1{
+    font-size: 46px;
+  }
+  .btn{
+    padding: 1rem 2.15rem;
+  }
+
   /* footer */
   footer {
     font-size: 0.9rem;
@@ -166,6 +218,16 @@ footer {
     display: flex;
     margin-left: auto;
   }
+  .header-inner h2{
+    font-size: 38px;
+  }
+  .header-inner h1{
+    font-size: 54px;
+  }
+  .btn{
+    padding: 1.15rem 2.25rem;
+  }
+
   /* footer*/
   footer {
     font-size: 0.9rem;
@@ -185,6 +247,16 @@ footer {
 @media (min-width: 1200px){
   .container {
     max-width: 1140px;
+  }
+  .header-inner h2{
+    font-size: 42px;
+  }
+  .header-inner h1{
+    font-size: 64px;
+    letter-spacing: 3px;
+  }
+  .btn{
+    padding: 1rem 2.15rem;
   }
 }
 
