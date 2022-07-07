@@ -48,6 +48,7 @@ body {
 .menu a:hover {
   color: #fed136;
 }
+/* Header */
 header{
   background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
   background-repeat: no-repeat;
@@ -80,9 +81,14 @@ header{
   margin-top: 15px;
   display: inline-block;
   background-color:#fed136;
+  border-color: #fed136;
   border-radius: 3px;
   font-size: 22px;
   font-weight: 700;
+}
+.btn:hover{
+  background-color: #fec810;
+  border-color: #fec503;
 }
 
 /*footer style */
