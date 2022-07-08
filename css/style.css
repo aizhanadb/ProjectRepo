@@ -310,6 +310,9 @@ footer {
   .boxes {
     grid-template-columns: repeat(3, 1fr);
   }
+  .box{
+    justify-content: flex-start;
+  }
 
   /* footer */
   footer {
