@@ -187,6 +187,102 @@ p {
   height: 70px;
 }
 
+/* section team */
+:root{
+  --primary-color: #F8F9FA;
+  --secondary-color: #212529;
+  --dark-color: #6C757D;
+  --light-color: #DFE0E1;
+  --success-color: #343A40;
+}
+.container1{
+  width: 98%;
+  margin:auto;
+  height:auto;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;;
+ 
+}
+
+section .card .image{
+  height: 230px;
+  width: 230px;
+  padding:3px;
+ 
+}
+
+section .card .image img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  border: 8px solid var(--light-color);
+  border-radius: 50%;
+}
+
+.card{
+  width: 420px;
+}
+.card .card-content{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;    
+}
+.card .name-proffesion{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top:15px;
+}
+
+.name-proffesion .name{
+  font-size:25px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.name-proffesion .proffesion{
+  font-size:15px;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom:10px;
+}
+
+.header{
+  padding:50px;
+}
+
+.header h2{
+  margin-top: 30px;
+  font-size: 40px;
+  color:var(--secondary-color);   
+}
+
+.header p{
+  color:var(--dark-color);
+  font-size: 15px;
+  font-weight: 10;
+  text-align:center;
+  margin-bottom:16px;
+
+}
+
+.text{
+  text-align:center;
+  width:90%;
+  margin:auto;
+  padding:20px;
+}
+
+* ::selection{
+  background-color: #FED136;
+}
+/* section team end */
+
+
 
 /*footer style */
 footer {
@@ -274,7 +370,7 @@ footer {
   .header-inner h1 {
     font-size: 38px;
   }
-
+ 
   /* footer css */
   footer {
     font-size: 0.9rem;
@@ -358,6 +454,20 @@ footer {
   .btn {
     padding: 1.15rem 2.25rem;
   }
+
+  
+  /* section team */
+  .container-card{
+    display:flex;
+    flex-direction:row;
+}
+
+.text{
+    text-align:center;
+    width:55%;
+    margin:auto;
+    flex-wrap: nowrap;
+}
 
   /* footer*/
   footer {
